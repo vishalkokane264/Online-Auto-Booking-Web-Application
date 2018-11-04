@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1"><style>
+div.container {height:25% 50% 25%;
+    align:center;
+    width: 80%;
+    border: 1px solid gray;
+ }
+
+img.avatar {
+
+    width: 18%;
+    border-radius: 10%;
+
+}
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+text-align:left;
+overflow:hidden;
+    background-color:skyblue;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 1;
+text-align:center;
+height:auto;
+}
+   
+nav ul a {
+    text-decoration: bold;
+
+}
+
+article {
+    background-color:skyblue;
+    margin-left: 170px;
+    padding: 3em;
+    overflow: hidden;
+    border-left: 3px solid gray;
+}
+
+.error {color: #FF0000;}
+
+</style>
+</head>
+<body>
+<center>
+<div id="container" style="width:1000px;" bgcolor="blue">
+
+<div class="header" style="background-image:url(images/4.png);" width=1000px;>
+<img src="images/rick2.jpg"; align="left" height=130px width=180px style="margin: 4px 0px 2px 6px;"><h1 ><font color="white"><b>Online Auto Booking System</h1>
+<h2>E-Auto</h2>
+<marquee>Book Your Auto in a click</font></marquee>
+</div>
+<div class="container" style="width:1000px;" bgcolor="blue">
+<div class="nav" style="background-image:url(images/b32.png);border:0px solid black; width:816px ; float:right; margin:0px 0px 0px 1px">
+<center>
+<font color="blue"><h2>Register your details here</h2></font>	
+<table border=0px solid black cellspacing=0 cellpadding=4 width=400px height=414px text-align=left>
+<p><span class="error">* required field.</span></p>
+<form method="POST" action="customer.php"> 
+
+<tr>
+	<td>  Name: </td><td><input type="text" name="name1"/>
+  <span class="error">* <?php echo $Name;?></span></td>
+  </tr>
+<tr>
+<td>
+  Address:</td><td> <input type="text" name="Address">
+  <span class="error">* <?php echo $AddressErr;?></span></td>
+  </tr>
+<tr><td>
+  Age: </td><td><select name="age" size=1 >
+<option>Select
+<option>Below20
+<option>21-30
+<option>31-40
+<option>41-50
+<option>51-60
+<option>61Onwards
+</option>
+</select>
+  <span class="error">* <?php echo $AgeErr;?></span>
+  </td></tr>
+
+<tr><td>Gender:</td><td><input type="radio" name="gender" value="male" checked>Male
+<input type="radio" name="gender" value="female" >Female<br><br></td></tr>
+<tr>
+<td>Contact No.:</td><td><input type="text" name="mobileNo" maxlength=10>
+  <span class="error">* <?php echo $emailErr;?></span>
+  </td></tr>
+ 
+
+<tr><td> E-mail:</td><td> <input type="email" name="email" placeholder="someone@example.com">
+  <span class="error">* <?php echo $emailErr;?></span>
+  </td></tr>
+
+<tr><td>Physical Disability:</td><td><input type="radio" name="disab" value="Yes">Yes
+<input type="radio" name="disab" value="no" checked>No
+</td></tr>
+
+<tr><td>Password:</td><td> <input type="password" name="myPsw" value=""></td></tr>
+
+<tr><td>Confirm Password:<td><input type="password" name="myPsw1" value=""></td></tr>
+<tr><td></td><td>  <input type="submit" name="submit" value="Submit" ></td></tr>  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+</table>
+</form>
+</div>
+</div>
+<div class="nav" style="background-image:url(images/b26.png); width:181px;height:550px ;border:1px solid black; float:left; margin:0px 0px 0px 0px">
+
+<table border=0px solid black cellspacing=1 cellpadding=2 width=160px ">
+ <tr><td><a href="layout.html">Home</a></tr>
+    <tr><td><a href="login.html">Log in</a></tr>
+    <tr><td><a href="registration.html">New User Register</a></tr>
+   <tr> <td><a href="forgot.html">Forgot user name/password</a></tr>
+    <tr><td><a href="find.php">Find nearest Auto</a></tr>
+  <tr><td><a href="Teriff.html">Terrif</a></tr>
+    <tr><td><a href="regcomplaint.html">Register Your complaint</a></tr>
+<p><td><a href="help.html"> Help</a></tr>
+<p><td><a href="aboutus.html">About</a></tr>  
+</table>
+</div>
+
+
+<!--
+<?php
+echo "<h2>Your Input:</h2>";
+echo $name;
+echo "<br>";
+echo $email;
+echo "<br>";
+echo $website;
+echo "<br>";
+echo $comment;
+echo "<br>";
+echo $gender;
+?>
+</body>
+-->		
+
+<div class="container" style="width:1000px; border:1px solid black;" bgcolor="blue">
+
+<div id="footer" style="background-image:url(images/4.png) ;text-align:center;height:60px; width:1000px;border:1px solid black; margin:547px 0px 0px 0px;border:1px solid black;"><font color="white"><h3>Copyright @ Modern College Shivajinagar,pune
+</div>
+</div>
+</div>
+</html>

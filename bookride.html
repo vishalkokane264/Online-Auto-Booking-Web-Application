@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.container {height:25% 50% 25%;
+    align:center;
+    width: 80%;
+    border: 1px solid gray;
+ }
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: green;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+    border-right: 3px solid gray;
+    text-align:left;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 1;
+    text-align:center;
+}
+   
+nav ul a {
+    text-decoration: bold;
+}
+
+
+
+article {
+    background-color:skyblue;
+    margin-left: 170px;
+    padding: 2.5em;
+    overflow: hidden;
+
+}
+
+
+}	
+img.avatar {
+    width: 18%;
+    border-radius:20px;
+     margin:left;
+	opacity=0.3;
+}
+
+.button {
+  display: inline-block;
+  padding: 5px 3px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background-color: brown;
+  border: 0px;
+  border-radius: 3px;
+  box-shadow: 0  ;
+}
+.button:hover {background-color: #3e8e42}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 10 5px #666;
+  transform: translateY(4px);
+}
+.button1 {.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+    transition-duration: 1s;
+}
+} /* Blue */
+.button1:hover 
+{
+     background-color: #008CBA;
+     color: white;
+}
+
+.button2
+{
+     background-color: #008CBA;
+} /* Blue */
+
+.button3 
+{
+     padding: 10px 20px;
+     background-color: gray; 
+     border-radius: 5px;
+} /* Blue */
+
+</style>
+</head>
+<body>
+
+<center>
+<div id="container" style="width:1000px; border:0px solid black;" bgcolor="blue">
+
+<div id="header" style="background-color:green" width=1000px>
+<img src="rick.jpg" align="left" height=129px width=180px style="margin: 2px 0px -2px 2px;"><h1 ><font color="white">Online Auto Booking System</h1>
+<h2>E-Auto</h2>
+<blink >Book Your Auto in a click</blink>
+</div>
+<div id="nav" style="background-color:yellow; width:181px ;height:350px;border:1px solid black; float:left; margin:0px 0px 0px -0px">
+
+<table border=0px solid black cellspacing=1 cellpadding=2 width=160px>
+ <tr><td><a href="home.html">Home</a></tr>
+    <tr><td><a href="login.html">Log in</a></tr>
+    <tr><td><a href="Registration.html">New User Register</a></tr>
+   <tr> <td><a href="forgot.html">Forgot user name/password</a></tr>
+    <tr><td><a href="find.html">Find nearest Auto</a></tr>
+  <tr><td><a href="Terrif.html">Terrif</a></tr>
+    <tr><td><a href="regcomplaint.html">Register Your complaint</a></tr>
+  <td><a href="help.html"> Help</a></tr>
+  <td><a href="aboutus.html">About</a></tr>  
+</table>
+
+</div>
+
+<div id="nav" style="background-color:#FC9804; width:815px ;height:350px; float:right;border:1px solid black; margin:0px 0px 0px 0px">
+<table border=0px solid black cellspacing=1 cellpadding=2 width=500px style="margin:50px 0px 0px 0px">
+<form method="get" action="bookride.php">
+ <tr>
+	<td>Enter a start point:</td>
+	<td><input type="text" placeholder="Enter Address" name="saddress" required>&nbsp<a href="gmap.html" button class="button button1" >Choose point</a>
+	</td>
+</tr>
+<tr>
+     <td>&nbsp</td>
+</tr>
+<tr>
+	<td>Enter a End point:</td><td><input type="text" placeholder="Enter Address" name="eaddress" required>&nbsp<a href="gmap.html" button class="button button1" >Choose point</a>
+	</td>
+</tr>
+<tr>
+     <td>&nbsp</td>
+</tr>
+<tr>
+	<td>Date & Time:</td><td><input type="text" maxlength="10" name="To_Date" value="<?php
+echo date('m/d/y');?>"/>
+	</td>
+</tr>
+<tr>
+     <td>&nbsp</td>
+</tr>
+
+<tr>
+	<td>
+	</td>
+	<td align="right"><input type="submit" value="Book a ride" name="submit">
+	</td>
+</tr>
+</form>
+</table>
+</div>
+<div id="footer" style="background-color:green ;text-align:center;height:60px; width:1000px;border:1px solid black; margin:350px 0px 0px 0px;border:1px solid black;">Copyright @ Modern</div></div>

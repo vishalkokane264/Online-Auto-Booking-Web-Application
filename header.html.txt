@@ -1,0 +1,18 @@
+<html>
+<head>
+<style>
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: green;
+    clear: left;
+    text-align: center;
+}
+</style>
+<body>
+<header>
+<img src="rick.jpg" align="left"alt="avatar" class="avatar"  ><h1>Online Auto Booking System</h1>
+<h2>E-Auto</h2>
+<blink >Book Your Auto in a click</blink></header>
+</body>
+</html>

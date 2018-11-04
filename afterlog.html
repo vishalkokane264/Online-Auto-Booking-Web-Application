@@ -1,0 +1,97 @@
+<?php
+session_start();
+echo"HI";
+echo"Hello".$_SESSION["uid"]."All";
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.button {
+    background-color: orange;
+    border: 3px;
+    color: white;
+    padding: 15px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px px px 0px;
+    cursor: pointer;
+}
+.button2 {
+   width:150px;
+   background-color: #008CBA;
+   
+
+} /* Blue */
+</style>
+</head>
+
+
+<body >
+<center>
+<div id="container" style="width:1000px;min-height:560px;border:0px solid black; " bgcolor="blue">
+
+<div id="header" style="background-color:green" width=1000px>
+<img src="rick.jpg" align="left" height=129px width=180px style="margin: 2px 0px -2px 2px;"><h1 ><font color=white>Online Auto Booking System</h1>
+<h2>E-Auto</h2>
+<blink >Book Your Auto in a click</blink>
+</div>
+<div id="nav" style="background-color:yellow; width:178px ;height:350px; float:left;border:1px solid black; margin:0px 0px 0px 0px">
+
+<table border=0px solid black cellspacing=1 cellpadding=2 width=160px>
+ <tr><td><a href="layout.html">Home mvit</a></tr>
+    <tr><td><a href="login.html">Log in</a></tr>
+    <tr><td><a href="registration.html">New User Register</a></tr>
+   <tr> <td><a href="forgot.html">Forgot user name/password</a></tr>
+    <tr><td><a href="find.php">Find nearest Auto</a></tr>
+  <tr><td><a href="Terrif.html">Terrif</a></tr>
+    <tr><td><a href="regcomplaint.html">Register Your complaint</a></tr>
+<td><a href="help.html"> Help</a></tr>
+<td><a href="aboutus.html">About</a></tr>  
+</table>
+</div>
+
+<div id="nav" style="background-color:#FC9804; width:815px ;border:1px solid black;height:350px; float:right; ">
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<a href="logout.php" button class="button button2" value="log out">Log out</a>
+<!--<table border=1px solid black width=300px cellpadding=5px cellspacing=4px align="center" style="margin:50px 150px 0px 0px ;" >
+<tr>
+    <td><a href="bookride.html" button class="button button2">Book a ride</a></td></tr>
+<tr>
+    <td><a href="payment.html"button class="button button2">Pay a Bill</a></td></tr>
+
+<tr>
+    <td><a href="traceauto.html" button class="button button2">Track Your Auto</a></td></tr>
+<tr>
+    <td><a href="terrif.html" button class="button button2">What is Terriff??</a></td></tr>
+</center>	
+</table>
+-->
+<?php
+session_start();
+echo"<h4>Hello, ".$_SESSION["uid"]."</h4>";
+
+?>
+<p>&nbsp<br></p><p> <a href="bookride.php" button class="button button2">Book a ride&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a><br><br></p>
+<p><a href="payment.html"button class="button button2">Pay a Bill&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a><br><br>
+<p><a href="traceauto.html" button class="button button2">Track Your Auto</a><br><br>
+<p><a href="terrif.html" button class="button button2">What is Terriff??</a><br><br>
+
+
+</div>
+
+<div id="footer" style="border:1px solid black;background-color:green;height:60px; width:1000px;clear:both; text-align:center;">Copyright @ Modern</footer>
+</div>
+</div></html>
+

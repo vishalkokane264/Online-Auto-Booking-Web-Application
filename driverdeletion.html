@@ -1,0 +1,153 @@
+<?php
+include("db.php");
+session_start();
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1"><style>
+div.container {height:25% 50% 25%;
+    align:center;
+    width: 80%;
+    border: 1px solid gray;
+ }
+
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: green;
+    clear: left;
+    text-align: center;
+}
+
+img.avatar {
+
+    width: 18%;
+    border-radius: 10%;
+
+}
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+text-align:left;
+}
+.button2{
+    background-color: orange;
+    border: 3px;
+    color: white;
+align:right;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px px px 0px;
+    cursor: pointer;
+}
+.button2 {
+   width:150px;
+   background-color: #008CBA;
+   
+
+} 
+
+
+nav ul {
+    list-style-type: none;
+    padding: 1;
+text-align:center;
+}
+   
+nav ul a {
+    text-decoration: bold;
+
+}
+
+article {
+    background-color:skyblue;
+    margin-left: 170px;
+    padding: 2.5em;
+    overflow: hidden;
+    border-left: 3px solid gray;
+}
+
+.error {color: #FF0000;}
+
+</style>
+</head>
+<body >
+<center>
+<div id="container" style="width:1000px;" bgcolor="blue">
+
+<div class="header" style="background-image:url(images/4.png);" width=1000px;>
+<img src="images/rick2.jpg"; align="left" height=130px width=180px style="margin: 4px 0px 2px 6px;"><h1 ><font color="white"><b>Online Auto Booking System</h1>
+<h2>E-Auto</h2>
+<marquee>Book Your Auto in a click</font></marquee>
+</div>
+<div class="container" style="width:1000px;" bgcolor="blue">
+<div class="nav" style="background-image:url(images/b32.png);border:0px solid black; width:816px ; float:right; margin:0px 0px 0px 1px">
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<font color="red">Hello, <?php echo$_SESSION["uname"];?><a href="logout1.php" button class="button2 button2" value="log out">Log out</a></font>
+
+
+<font color="blue"><h2>Enter Driver details</h2></font>	
+<table border=0px solid black cellspacing=0 cellpadding=4 width=400px height=414px text-align=left>
+<p><span class="error">* required field.</span></p>
+<form method="POST" action="driverdeletion.php"> 
+
+<tr>
+	<td>  Driver Name: </td><td><input type="text" name="name1"></td>
+  </tr>
+<tr>
+
+<td>Batch No.:</td><td><input type="text" name="batchNo" maxlength=6>
+  <span class="error">*</span>
+  </td></tr>
+<tr>
+<tr>
+<td>Licence No.:</td><td><input type="text" name="licNo" maxlength=15>
+  <span class="error">*</span>
+  </td></tr>
+<tr>
+<td>Auto registration No.:</td><td><input type="text" name="autoNo" maxlength=10>
+  <span class="error">*</span>
+  </td></tr>
+
+<tr>
+<td>Contact No.:</td><td><input type="text" name="mobileNo" maxlength=10>
+  <span class="error">*</span>
+  </td></tr>
+ 
+
+<tr><td></td><td>  <input type="submit" name="ok" value="Submit" ></td></tr>  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+</table>
+</form>
+</div>
+
+<div class="nav" style="background-image:url(images/b26.png); width:181px;height:580px ;border:1px solid black; float:left; margin:0px 0px 0px 0px">
+<table border=0px solid black cellspacing=1 cellpadding=2 width=160px ">
+    <tr><td><a href="adminlogin.html">Log in</a></tr>
+    <tr><td><a href="adminregistration.html">Register new Admin</a></tr>
+    <tr><td><a href="find.php">Find nearest Auto</a></tr>
+  <tr><td><a href="Teriff.html">Terrif</a></tr>
+ <td><a href="aboutus.html">About</a></tr>  
+</table>
+</div>
+
+</body>
+<div class="container" style="width:1000px; border:1px solid black;" bgcolor="blue">
+
+<div id="footer" style="background-image:url(images/4.png) ;text-align:center;height:60px; width:1000px;border:1px solid black; margin:580px 0px 0px 0px;border:1px solid black;"><font color="white"><h3>Copyright @ Modern College Shivajinagar,pune
+</div>
+</div>
+</div>
+
+</html>

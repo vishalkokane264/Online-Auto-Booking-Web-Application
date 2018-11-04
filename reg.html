@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.container {
+
+    align:center;
+    width: 50%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: green;
+    clear: left;
+    text-align: center;
+}
+
+</style>
+</head>
+<body >
+<center>
+<div class="container">
+
+<header>
+   <img src="rick.jpg" alt="avatar" class="avatar"  ><h1>Welcome to E-AUTO</h1>
+</header>
+  
+
+<style>
+.error {color: #FF0000;}
+</style>
+</head>
+<body>  
+<?php 
+if($_SERVER['REQUEST_METHOD']=='GET')
+{
+?>
+<form action="<?php echo $_SERVER['PHP_SELF']?>" method="POST">  
+
+<br>  Name: <input type="text" name="name"><br>
+  Email:<input type="text" name="email" maxsize=30/>
+  <br><br>
+
+ <input type="submit" name="submit" value="Submit">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <a href="login.html">Log in</a><br><br> 
+
+</form>
+<?php
+}
+elseif($_SERVER['REQUEST_METHOD']=='POST')
+{
+$name=$_POST['name'];
+$email=$_POST['email'];
+if((!empty($name))&&(!empty($email))
+{
+echo "hello"$name;
+$e=explode('@',$email)
+if(count($e)!=2)
+echo "wrong";
+}
+echo"Fill all info";
+}
+else die("nor able to proces");
+}
+?>
+
+</html>		
+
+</body>
+<footer>Copyright &copy; W3Schools.com</footer>
+</html>
